@@ -1,0 +1,510 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: 'Work Sans', sans-serif;
+}
+
+p, ul{
+    margin-bottom: 0 !important;
+}
+
+h1{
+    color: #22495F;
+    font-weight: 600;
+    text-align: center;
+}
+
+/* ----------------------------------Mobile---------------------------------- */
+
+@media  (min-device-width: 320px) and (max-device-width: 600px){ 
+
+    /* -----------------navbar----------------- */
+
+    .topnav {
+        overflow: hidden;
+        background-color: #fff;
+        position: relative;
+    }
+    
+    .topnav #myLinks {
+        display: none;
+    }
+    
+    .topnav a {
+        color: #22495F;
+        padding: 0 16px 14px 16px;
+        text-decoration: none;
+        font-size: 17px;
+        display: block;
+    }
+    
+    .nav-content{
+        text-align: center;
+    }
+
+    .topnav a.icon {
+        display: block;
+        position: absolute;
+        right: 0;
+        top: 0;
+        margin-top: 25px;
+        margin-right: 4px;
+    }
+    
+    .topnav a:hover {
+        color: black;
+    }
+    
+    .active {
+        background-color: #fff;
+        color: white;
+    }
+
+    /* -----------------welcome----------------- */
+
+    .welcome{
+        margin: 20px;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .welcome > h2{
+        text-align: center;
+        color: #22495F;
+        margin-bottom: 20px;
+    }
+
+    .btn{
+        padding: 10px 40px !important;
+        border-radius: 50px !important;
+        margin-bottom: 40px;
+    }
+
+    .btn-primary:hover{
+        background-color: #5236FF !important;
+        border-color: #5236FF !important;
+    }
+
+    .welcome > div > img{
+        width: 90%;
+        border-radius: 20px;
+        margin: 0 20px 20px 20px;
+    }
+
+    /* -----------------values----------------- */
+    .values{
+        margin: 40px;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+    }
+
+    .main-values{
+        margin-top: 40px;
+    }
+
+    .card-values{
+        display: flex;
+        flex-direction: column;
+        align-items: flex-start;
+        padding: 40px;
+        border-radius: 20px;
+        box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.1), 0 6px 20px 0 rgba(0, 0, 0, 0.1);
+        text-align: center;
+        margin-bottom: 40px;
+    }
+
+    .card-values > img{
+        width: 25%;
+    }
+
+    .card-values > img, h1, p{
+        margin-bottom: 20px;
+    }
+
+    .card-values > p{
+        text-align: left;
+    }
+
+    /* -----------------job----------------- */
+
+    .job{
+        margin: 40px;
+    }
+
+    .job-list{
+        margin-top: 40px;
+    }
+
+    .list{
+        border: #E8EBF0 solid 2px;
+        padding: 20px;
+        border-radius: 20px;
+        margin-bottom: 20px;
+    }
+
+    .list:hover{
+        background-color: #E7F2F7;
+    }
+
+    .list > .btn-outline-secondary{
+        margin-top: 40px;
+    }
+    
+    .list > h5, p, .btn-outline-secondary{
+        margin-bottom: 10px !important;
+    }
+
+    /* -----------------footer----------------- */
+
+    footer{
+        background-color: #000;
+        padding: 40px 4px;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: space-between;
+    }
+
+    footer > div{
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        flex-wrap: wrap;
+    }
+    footer > div > a{
+        text-decoration: none;
+        color: #fff;
+        padding: 20px;
+    }
+
+}
+
+/* ----------------------------------Tablet---------------------------------- */
+
+@media screen
+and (min-device-width: 600px)
+and (max-device-width: 1200px)
+and (-webkit-min-device-pixel-ratio: 1){
+
+    /* -----------------navbar----------------- */
+
+    header{
+        width: 100%;
+        padding: 0 40px;
+    }
+    .topnav{
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+    }
+
+    .topnav > #myLinks > a{
+        text-decoration: none;
+        color: #000;
+        padding: 0 20px;
+    }
+    .topnav > .icon{
+        display: none;
+    }
+
+    /* -----------------welcome----------------- */
+
+    .welcome{
+        margin: 60px 40px;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .welcome > h2{
+        text-align: center;
+        color: #22495F;
+        margin-bottom: 40px;
+    }
+
+    .welcome > .wel-img{
+        display: flex;
+        align-items: center;
+        justify-content: space-around;
+    }
+
+    .btn{
+        padding: 10px 40px !important;
+        border-radius: 50px !important;
+        margin-bottom: 40px;
+    }
+
+    .btn-primary{
+        background-color: #5236FF !important;
+        border-color: #5236FF !important;
+    }
+
+    .welcome > div > img{
+        width: 45%;
+        border-radius: 20px;
+    }
+
+    /* -----------------values----------------- */
+    .values{
+        margin: 40px 60px;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+    }
+    .main-values{
+        margin-top: 40px;
+        display: grid;
+        grid-template-columns: repeat(2, 6fr);
+        grid-column-gap: 20px;
+    }
+
+    .card-values{
+        display: flex;
+        flex-direction: column;
+        align-items: flex-start;
+        padding: 40px;
+        border-radius: 20px;
+        box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.1), 0 6px 20px 0 rgba(0, 0, 0, 0.1);
+        text-align: center;
+        margin-bottom: 40px;
+
+    }
+
+    .card-values > img{
+        width: 25%;
+    }
+
+    .card-values > img, h1, p{
+        margin-bottom: 20px;
+    }
+
+    .card-values > p{
+        text-align: left;
+    }
+
+     /* -----------------job----------------- */
+
+     .job{
+        margin: 60px;
+    }
+
+    .job-list{
+        margin-top: 40px;
+        display: grid;
+        grid-template-columns: repeat(2, 6fr);
+        grid-column-gap: 20px;
+    }
+
+    .list{
+        border: #E8EBF0 solid 2px;
+        padding: 20px;
+        border-radius: 20px;
+        margin-bottom: 20px;
+    }
+
+    .list:hover{
+        background-color: #E7F2F7;
+    }
+
+    .list > .btn-outline-secondary{
+        margin-top: 40px;
+    }
+    
+    .list > h5, p, .btn-outline-secondary{
+        margin-bottom: 10px !important;
+    }
+
+
+    /* -----------------footer----------------- */
+
+    footer{
+        background-color: #000;
+        padding: 40px 4px;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: space-between;
+    }
+
+    footer > div{
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        flex-wrap: wrap;
+    }
+    footer > div > a{
+        text-decoration: none;
+        color: #fff;
+        padding: 20px;
+    }
+}
+
+
+/* ----------------------------------Laptop---------------------------------- */
+
+@media screen
+and (min-device-width: 1200px)
+and (max-device-width: 1600px)
+and (-webkit-min-device-pixel-ratio: 1){
+
+    /* -----------------navbar----------------- */
+
+    header{
+        width: 100%;
+        padding: 0 128px;
+    }
+    .topnav{
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+    }
+
+    .topnav > #myLinks > a{
+        text-decoration: none;
+        color: #000;
+        padding: 0 20px;
+    }
+    .topnav > .icon{
+        display: none;
+    }
+
+
+    /* -----------------welcome----------------- */
+
+    .welcome{
+        margin: 60px 250px;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .welcome > h2{
+        text-align: center;
+        color: #22495F;
+        margin-bottom: 40px;
+    }
+
+    .welcome > .wel-img{
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+
+    .btn{
+        padding: 10px 40px !important;
+        border-radius: 50px !important;
+        margin-bottom: 40px;
+    }
+
+    .btn-primary{
+        background-color: #5236FF !important;
+        border-color: #5236FF !important;
+    }
+
+    .welcome > div > img{
+        width: 45%;
+        border-radius: 20px;
+        margin: 20px;
+    }
+
+    /* -----------------values----------------- */
+    .values{
+        margin: 40px 128px;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+    }
+    .main-values{
+        margin-top: 40px;
+        display: grid;
+        grid-template-columns: repeat(3, 4fr);
+        grid-column-gap: 40px;
+    }
+
+    .card-values{
+        display: flex;
+        flex-direction: column;
+        align-items: flex-start;
+        padding: 40px;
+        border-radius: 20px;
+        box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.1), 0 6px 20px 0 rgba(0, 0, 0, 0.1);
+        text-align: center;
+        margin-bottom: 40px;
+    }
+
+    .card-values > img{
+        width: 25%;
+    }
+
+    .card-values > img, h1, p{
+        margin-bottom: 20px;
+    }
+
+    .card-values > p{
+        text-align: left;
+    }
+
+    /* -----------------job----------------- */
+
+    .job{
+        margin: 100px 128px;
+    }
+
+    .job-list{
+        margin-top: 60px;
+        display: grid;
+        grid-template-columns: repeat(3, 4fr);
+        grid-column-gap: 20px;
+    }
+
+    .list{
+        border: #E8EBF0 solid 2px;
+        padding: 20px;
+        border-radius: 20px;
+        margin-bottom: 20px;
+    }
+
+    .list:hover{
+        background-color: #E7F2F7;
+    }
+
+    .list > .btn-outline-secondary{
+        margin-top: 40px;
+    }
+    
+    .list > h5, p, .btn-outline-secondary{
+        margin-bottom: 10px !important;
+    }
+
+
+
+    /* -----------------footer----------------- */
+
+    footer{
+        background-color: #000;
+        padding: 40px 4px;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: space-between;
+    }
+
+    footer > div{
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        flex-wrap: wrap;
+    }
+    footer > div > a{
+        text-decoration: none;
+        color: #fff;
+        padding: 20px;
+    }
+}
+
